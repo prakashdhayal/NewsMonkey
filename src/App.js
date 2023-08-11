@@ -12,7 +12,7 @@ import {
 const App=()=> {
   const [progress, setProgress] = useState(0)
   const pageSize = 15;
-  const apiKey = process.env.REACT_APP_NEWS_API;
+  const apiKey = process.env.REACT_APP_NEWS_API || "f6da6a0e2e124aa39c78195235a58cbd";
   // const apiKey="f6da6a0e2e124aa39c78195235a58cbd";
   const changeProgress = (progress) => {
     setProgress(progress);
